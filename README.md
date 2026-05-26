@@ -40,6 +40,8 @@ $ uptime
 
 | Tanggal | Yang Dipelajari |
 |---|---|
+| 2026-05-26 | PPPoE Server & Client — simulasi ISP pelanggan |
+| 2026-05-26 | Simulasi isolir pelanggan via PPP Secrets       |
 | 2026-05-26 | Topologi dual router — simulasi ISP environment |
 | 2026-05-26 | NAT Masquerade — internet sharing antar router |
 | 2026-05-26 | DHCP Server & IP Pool di MikroTik CHR |
@@ -86,7 +88,8 @@ $ uptime
 ✓ setup DHCP server dan NAT
 ✓ troubleshoot koneksi dengan pendekatan per-layer
 ✓ membaca konfigurasi router yang belum pernah dilihat sebelumnya
-→ PPPoE server & client          (sedang dikerjakan)
+✓ PPPoE server & client — simulasi modem pelanggan ISP
+→ Firewall & NAT                 (sedang dikerjakan)
 → ...                            (akan menyusul)
 ```
 

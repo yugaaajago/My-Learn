@@ -15,7 +15,7 @@ Client-A ----- Switch-A ----- Router ----- Switch-B ----- Client-B
 |5. | Switch-B | Ether1 -> Router | - |
 |6. | Switch-B | Ether2 -> Client-B | - |
 |7. | Client-A | Ether0 -> Switch-A | 172.16.0.2/27 |
-|8. | Client-B | Ether0 -> Switch-B | 172.168.0.34/27 |
+|8. | Client-B | Ether0 -> Switch-B | 172.16.0.34/27 |
 
 ## Ketentuan
 

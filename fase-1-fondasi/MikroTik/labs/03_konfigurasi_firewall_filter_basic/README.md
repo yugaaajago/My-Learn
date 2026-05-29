@@ -1,0 +1,3 @@
+# Firewall Filter Rule
+
+Jadi pada materi ini saya coba mempraktikkan beberapa filter rule pada mikrotik A. Filter yang saya gunakan diantaranya berfungsi agar jika sudah tersambung ke internet tidak perlu di cek lagi (established,related), lalu membuat filter agar client dapat terhubung ke internet, setelahnya membuat agar sesama client tidak dapat saling connect atau membuat mereka terisolasi pada jaringan mereka sendiri.

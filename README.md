@@ -136,8 +136,13 @@ Setup     : dual router topology — simulating real-world scenarios
 
 ```
 📁 fase-1-fondasi/
-   ├── labs/         → file simulasi Packet Tracer
-   └── notes/        → catatan materi dalam bahasa sendiri
+   ├── Mikrotik
+   |    ├── labs/     → file simulasi MikroTik
+   |    └── notes/    → catatan materi dalam bahasa sendiri
+   └── Cisco
+        ├── labs/     → file simulasi Packet Tracer
+        └── notes/    → catatan materi dalam bahasa sendiri
+           
 
 📁 [folder berikutnya]/
    └── ...           → akan muncul seiring waktu

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> b7ede073ab43e8eea70eb9f3561f9d951011a3d5
-# yugaa · network journal
+# Yugaa · network journal
 
 > *"Bukan tentang seberapa banyak yang kamu tahu hari ini.*
 > *Tapi tentang seberapa jauh kamu mau pergi dari sini."*
@@ -45,11 +41,8 @@ $ uptime
 | Tanggal | Yang Dipelajari |
 |---|---|
 | 2026-05-26 | PPPoE Server & Client — simulasi ISP pelanggan |
-<<<<<<< HEAD
 | 2026-05-26 | Simulasi isolir pelanggan via PPP Secrets       |
-=======
 | 2026-05-26 | Simulasi isolir pelanggan via PPP Secrets |
->>>>>>> b7ede073ab43e8eea70eb9f3561f9d951011a3d5
 | 2026-05-26 | Topologi dual router — simulasi ISP environment |
 | 2026-05-26 | NAT Masquerade — internet sharing antar router |
 | 2026-05-26 | DHCP Server & IP Pool di MikroTik CHR |

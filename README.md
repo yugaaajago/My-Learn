@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # yugaa · network journal
+=======
+# Yugaa · network journal
+>>>>>>> 4124523f84676146044d6331f579546026685af4
 
 > *"Bukan tentang seberapa banyak yang kamu tahu hari ini.*
 > *Tapi tentang seberapa jauh kamu mau pergi dari sini."*
@@ -40,6 +44,11 @@ $ uptime
 
 | Tanggal | Yang Dipelajari |
 |---|---|
+<<<<<<< HEAD
+=======
+| 2026-05-26 | PPPoE Server & Client — simulasi ISP pelanggan |
+| 2026-05-26 | Simulasi isolir pelanggan via PPP Secrets       |
+>>>>>>> 4124523f84676146044d6331f579546026685af4
 | 2026-05-26 | Topologi dual router — simulasi ISP environment |
 | 2026-05-26 | NAT Masquerade — internet sharing antar router |
 | 2026-05-26 | DHCP Server & IP Pool di MikroTik CHR |
@@ -86,7 +95,12 @@ $ uptime
 ✓ setup DHCP server dan NAT
 ✓ troubleshoot koneksi dengan pendekatan per-layer
 ✓ membaca konfigurasi router yang belum pernah dilihat sebelumnya
+<<<<<<< HEAD
 → PPPoE server & client          (sedang dikerjakan)
+=======
+✓ PPPoE server & client — simulasi modem pelanggan ISP
+→ Firewall & NAT                 (sedang dikerjakan)
+>>>>>>> 4124523f84676146044d6331f579546026685af4
 → ...                            (akan menyusul)
 ```
 
@@ -185,4 +199,8 @@ semoga catatan-catatan ini membantu.
 
 &nbsp;
 
+<<<<<<< HEAD
 <sub>updated regularly · github.com/yugaaajago</sub>
+=======
+<sub>updated regularly · github.com/yugaaajago</sub>
+>>>>>>> 4124523f84676146044d6331f579546026685af4

@@ -1,9 +1,20 @@
-# Setting pppoe
+
+# Lab 02 — Konfigurasi PPPoE
 
 Jadi pada tahap ini saya telah mempraktikkan penggunaan pppoe dengan 3 MikroTik CHR. Dimana 1 MikroTik menjadi pusat yang memberikan akses internet kepada Mikrotik lainya.
 
-## Detail 
+## Topologi
+CHR-B & CHR-C (PPPoE Client) → CHR-A (PPPoE Server) → Internet
 
+## Yang Dikonfigurasi
+- IP Pool per wilayah
+- PPPoE Profile (VIP 20Mbps & Member 10Mbps)  
+- PPPoE Server di ether2 & ether3
+- PPP Secrets per pelanggan
+
+## Hasil
+✅ 2 pelanggan konek PPPoE simultan
+✅ Simulasi isolir pelanggan berhasil
 Router A = pppoe-pusat-smg
 
 ### ip pool

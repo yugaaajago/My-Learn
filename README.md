@@ -40,6 +40,11 @@ $ uptime
 
 | Tanggal | Yang Dipelajari |
 |---|---|
+| 2026-05-29 | PPPoE Server & Client — 2 pelanggan ISP simultaneous  |
+| 2026-05-29 | 2 Profile berbeda — VIP 20Mbps & Member 10Mbps        |
+| 2026-05-29 | Firewall Filter — protect router & isolasi pelanggan  |
+| 2026-05-29 | Troubleshoot firewall PPPoE interface binding          |
+| 2026-05-29 | Memahami L2TP tunnel — konsep & production environment |
 | 2026-05-26 | PPPoE Server & Client — simulasi ISP pelanggan |
 | 2026-05-26 | Simulasi isolir pelanggan via PPP Secrets       |
 | 2026-05-26 | Simulasi isolir pelanggan via PPP Secrets |
@@ -89,9 +94,10 @@ $ uptime
 ✓ setup DHCP server dan NAT
 ✓ troubleshoot koneksi dengan pendekatan per-layer
 ✓ membaca konfigurasi router yang belum pernah dilihat sebelumnya
-✓ PPPoE server & client — simulasi modem pelanggan ISP
-→ PPPoE server & client          (sedang dikerjakan)
-→ Firewall & NAT                 (sedang dikerjakan)
+✓ PPPoE server & client — 2 pelanggan ISP simultaneous
+✓ Firewall filter — isolasi antar pelanggan ISP
+✓ Troubleshoot firewall interface mismatch
+→ Queue / Bandwidth Management   (berikutnya)
 → ...                            (akan menyusul)
 ```
 
@@ -105,9 +111,9 @@ $ uptime
 
 ```
 Tools     : WinBox · Cisco Packet Tracer · GNS3 · Wireshark
-Virtual   : 2x MikroTik CHR · VirtualBox
+Virtual   : 3x MikroTik CHR · VirtualBox
 Version   : RouterOS 7.20.8
-Setup     : dual router topology — simulating real-world scenarios
+Setup     : triple router ISP topology (CHR-A server, B & C clients)
 ```
 
 &nbsp;

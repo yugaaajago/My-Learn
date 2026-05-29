@@ -40,6 +40,7 @@ $ uptime
 
 | Tanggal | Yang Dipelajari |
 |---|---|
+| 2026-05-29 | Queue & Bandwidth — limit & burst pelanggan ISP |
 | 2026-05-29 | PPPoE Server & Client — 2 pelanggan ISP simultaneous  |
 | 2026-05-29 | 2 Profile berbeda — VIP 20Mbps & Member 10Mbps        |
 | 2026-05-29 | Firewall Filter — protect router & isolasi pelanggan  |

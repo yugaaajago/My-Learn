@@ -40,15 +40,16 @@ $ uptime
 
 | Tanggal | Yang Dipelajari |
 |---|---|
+| 2026-05-30 | Wireless dasar — SSID, channel, WPA2-PSK |
 | 2026-05-29 | Queue & Bandwidth — limit & burst pelanggan ISP |
+| 2026-05-29 | Simple Queue & Burst — bandwidth management |
+| 2026-05-29 | Troubleshoot firewall PPPoE interface binding          |
+| 2026-05-29 | Firewall Filter — protect router & isolasi pelanggan  |
+| 2026-05-29 | Memahami L2TP tunnel — konsep & production environment |
 | 2026-05-29 | PPPoE Server & Client — 2 pelanggan ISP simultaneous  |
 | 2026-05-29 | 2 Profile berbeda — VIP 20Mbps & Member 10Mbps        |
-| 2026-05-29 | Firewall Filter — protect router & isolasi pelanggan  |
-| 2026-05-29 | Troubleshoot firewall PPPoE interface binding          |
-| 2026-05-29 | Memahami L2TP tunnel — konsep & production environment |
 | 2026-05-26 | PPPoE Server & Client — simulasi ISP pelanggan |
 | 2026-05-26 | Simulasi isolir pelanggan via PPP Secrets       |
-| 2026-05-26 | Simulasi isolir pelanggan via PPP Secrets |
 | 2026-05-26 | Topologi dual router — simulasi ISP environment |
 | 2026-05-26 | NAT Masquerade — internet sharing antar router |
 | 2026-05-26 | DHCP Server & IP Pool di MikroTik CHR |
@@ -95,10 +96,12 @@ $ uptime
 ✓ setup DHCP server dan NAT
 ✓ troubleshoot koneksi dengan pendekatan per-layer
 ✓ membaca konfigurasi router yang belum pernah dilihat sebelumnya
-✓ PPPoE server & client — 2 pelanggan ISP simultaneous
-✓ Firewall filter — isolasi antar pelanggan ISP
+✓ PPPoE server & client — 2 pelanggan ISP simulasi
+✓ Simulasi isolir pelanggan
+✓ Firewall filter — protect router & isolasi pelanggan
 ✓ Troubleshoot firewall interface mismatch
-→ Queue / Bandwidth Management   (berikutnya)
+✓ Queue & bandwidth management + burst
+→ Wireless & Hotspot             (sedang dikerjakan)
 → ...                            (akan menyusul)
 ```
 

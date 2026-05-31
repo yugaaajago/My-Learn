@@ -1,0 +1,3 @@
+# Simple Queue
+
+Pada materi ini saya mempraktikkan bagaimana cara mengontrol atau membatasi badwidth untuk client. saya menggunakan simple queue untuk membatasi client. saya melakukan ini secara manual bukan otomatis. saya membatasi client 2 mendapatkan 10 Mbps dan Client 1 mendapatkan 20 Mbps. Saya juga setting burst agar ketika pelanggan ingin membuka web misalnya akan naik melebihi batas awalnya. seperti yang saya terapkan pada client 2, saya setting ketika kecepatan kurang dari 8 Mbps, maka badwitdh akan naik hingga 20 Mbps selama 8 detik.

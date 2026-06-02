@@ -40,7 +40,8 @@ $ uptime
 
 | Tanggal | Yang Dipelajari |
 |---|---|
-| 2026-05-30 | Wireless dasar — SSID, channel, WPA2-PSK |
+| 2026-06-02 | VLAN MikroTik — bridge, vlan filtering, inter-VLAN routing |
+| 2026-05-30 | Wireless dasar cisco — SSID, channel, WPA2-PSK |
 | 2026-05-29 | Queue & Bandwidth — limit & burst pelanggan ISP |
 | 2026-05-29 | Simple Queue & Burst — bandwidth management |
 | 2026-05-29 | Troubleshoot firewall PPPoE interface binding          |
@@ -101,7 +102,9 @@ $ uptime
 ✓ Firewall filter — protect router & isolasi pelanggan
 ✓ Troubleshoot firewall interface mismatch
 ✓ Queue & bandwidth management + burst
-→ Wireless & Hotspot             (sedang dikerjakan)
+✓ Wireless configuration cisco
+✓ VLAN MikroTik — bridge + vlan filtering + inter-VLAN routing
+→ Wireless & Hotspot             (Selanjutnya)
 → ...                            (akan menyusul)
 ```
 

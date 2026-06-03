@@ -10,9 +10,19 @@ Pada materi ini saya menggunakan 3 MikroTik CHR pada VirtualBox dan saya setting
 
 ## Topologi
 ```
-+------------+        +------------+        +------------+
-|   CHR-B    | <----- |   CHR-A    | -----> |   CHR-C    |
-+------------+        +------------+        +------------+
+            +----------+
+            | Internet |
+            +----------+
+                 |
+             +-------+
+             | CHR-A | (Gateway/Router Utama)
+             +-------+ 
+            /         \
+        (Static)     (DHCP)
+           |           |
+       +-------+    +-------+
+       | CHR-B |    | CHR-C |
+       +-------+    +-------+
 ```
 
 ## Perangkat & Adapter
@@ -30,7 +40,7 @@ system identity set name=CHR-A
 ```
 Menambahkan alamat IP 
 ```
-ip address add address=192.168.226.x/24 interface=ether1 (Internet)
+ip address add address=192.168.226.57/24 interface=ether1 (Internet)
 ip address add address=192.168.10.1/24 interface=ether2
 ip address add address=192.168.20.1/24 interface=ether3
 ```
@@ -46,7 +56,7 @@ ip dhcp-server setup
 [gateway=192.168.20.1]
 [address-to-give-out=192.168.20.2-192.168.20.254]
 [dns=yes 
-192.168.266.1,8.8.8.8]
+192.168.226.1,8.8.8.8]
 ```
 Menambahkan firewall NAT
 ```
@@ -90,12 +100,17 @@ ip address add address=192.168.200.1 interface=ether2
 ✅ Sesama Client bisa ping satu sama lain
 
 ## Yang Dipelajari
-- Cara konfigurasi IP Address
-- Cara route secara static
-- cara setup dhcp-server
-- cara menambahkan firewall nat untuk akses internet
-- cara menggunakan dhcp-client
-- mengerti alur jaringan sederhana
+- Perbedaan static route vs DHCP client — kapan pakai yang mana
+- NAT masquerade adalah kunci agar traffic dari jaringan private 
+  bisa keluar ke internet
+- DHCP server membutuhkan pool, gateway, dan DNS agar bisa 
+  berfungsi dengan benar
+- Alur data: CHR-B/C → CHR-A → Internet (semua lewat satu gateway)
+
+## Kendala & Solusi
+| Kendala | Solusi |
+|---------|--------|
+| kesalahan pengisian ip yang mengakibatkan gagalnya koneksi | mencari kesalahan konfigurasi, dan memperbaiki kesalahan pada ip |
 
 ## File
 - `basic-configuration-chr-a.rsc` → config CHR-A

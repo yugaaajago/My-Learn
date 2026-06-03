@@ -1,4 +1,4 @@
-# Lab 02 — PPoE Configuration
+# Lab 02 — PPPoE Configuration
 **Tanggal:** 29 Mei 2026 | **Status:** ✅ Selesai
 
 ---
@@ -10,9 +10,25 @@ Pada materi ini saya menggunakan 3 MikroTik CHR pada VirtualBox dan saya setting
 
 ## Topologi
 ```
-+------------+        +------------+        +------------+
-|   CHR-B    | <----- |   CHR-A    | -----> |   CHR-C    |
-+------------+        +------------+        +------------+
+            +----------+
+            | Internet |
+            +----------+
+                 |
+             +-------+
+             | CHR-A |
+             +-------+
+           PPPoE Server
+          /            \
+    +--------+      +--------+         
+    | ether2 |      | ether3 |
+    +--------+      +--------+   
+    (kalisari)      (pagilaran)
+        |               |
+    +-------+        +-------+
+    | CHR-B |        | CHR-C |
+    +-------+        +-------+
+    VIP 20Mbps      Member 10Mbps
+     (yugaa)          (arkan)
 ```
 
 ## Perangkat & Adapter
@@ -35,7 +51,7 @@ ip dhcp-client add interface=ether1
 Menambahkan IP Pool
 ```
 ip pool add name=vip-20Mbps ranges=10.10.10.10-10.10.10.254
-ip pool add name=member-10Mbps ranges=10.10.20.10-10.10.10.254
+ip pool add name=member-10Mbps ranges=10.10.20.10-10.10.20.254
 ```
 Setup DNS
 ```
@@ -114,9 +130,20 @@ tool bandwidth-test address=10.10.20.1 direction=receive duration=10 (CHR-C)
 ✅ Hasil tes bandwidth sesuai dengan yang dikonfigurasi (20Mbps untuk user yugaa dan 10Mbps untuk user arkan)
 
 ## Yang Dipelajari
-- Cara konfigurasi PPPoE
-- Cara membatasi bandwidth untuk client
-- cara menguji kecepatan bandwidth
+- PPPoE bekerja seperti "pintu masuk" — pelanggan harus 
+  autentikasi dulu sebelum dapat IP dan akses internet
+- Rate-limit di PPP Profile langsung membatasi kecepatan 
+  per pelanggan tanpa perlu queue terpisah
+- Perbedaan PPP Secret vs RADIUS — Secret disimpan lokal 
+  di router, RADIUS di server terpisah (yang dipakai ISP besar)
+- Kenapa ISP pakai PPPoE: autentikasi, assign IP otomatis, 
+  dan kontrol bandwidth dalam satu sistem
+
+## Kendala & Solusi
+| Kendala | Solusi |
+|---------|--------|
+| Bandwidth test gagal authentication | Matikan autentikasi: `tool bandwidth-server set authenticate=no` |
+| Route tidak aktif setelah PPPoE connect | Set gateway ke interface PPPoE bukan ke IP: `gateway=pppoe-batang` |
 
 ## File
 - `pppoe-server-batang.rsc` → config CHR-A
